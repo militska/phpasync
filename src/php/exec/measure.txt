@@ -1,0 +1,6 @@
+exec; Время выполнения скрипта: 4.0191 сек.
+
+hello from script. my name: el
+hello from script. my name: el
+hello from script. my name: el
+passthru; Время выполнения скрипта: 12.08 сек.
