@@ -7,6 +7,8 @@ RUN set -ex \
     postgresql-dev
 
 
+
+
 WORKDIR /var/www
 
 EXPOSE 9000
