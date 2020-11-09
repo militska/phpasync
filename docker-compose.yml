@@ -10,6 +10,14 @@ services:
     volumes:
       - .:/var/www
 
+  php-zts:
+    build:
+      context: docker/php-zts
+    env_file:
+      - .env
+    volumes:
+      - .:/var/www
+
   nginx:
     build:
       context: docker/nginx

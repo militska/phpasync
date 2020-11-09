@@ -1,5 +1,6 @@
 {
     "require": {
+        "ext-curl": "*",
         "amphp/amp": "^2.5",
         "guzzlehttp/guzzle": "^7.2"
     }
