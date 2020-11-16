@@ -7,7 +7,7 @@ RUN set -ex \
     postgresql-dev
 
 
-
+RUN apk add strace
 
 WORKDIR /var/www
 
