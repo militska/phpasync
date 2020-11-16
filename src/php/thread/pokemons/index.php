@@ -1,14 +1,14 @@
 <?php
-require_once __DIR__ . '/CounterDP.php';
-require_once __DIR__ . '/MyWorker.php';
-require_once __DIR__ . '/Task.php';
+require_once 'PokemonsDP.php';
+require_once 'MyWorker.php';
+require_once 'Task.php';
 
 error_reporting(E_ALL);
 $threads = 4;
 
 // Создадим провайдер. Этот сервис может например читать некие данные
 // из файла или из БД
-$provider = new CounterDP();
+$provider = new PokemonsDP();
 
 // Создадим пул воркеров
 $pool = new Pool($threads, 'MyWorker', [$provider]);

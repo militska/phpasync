@@ -6,14 +6,14 @@
 class MyWorker extends Worker
 {
     /**
-     * @var MyDataProvider
+     * @var PokemonsDP
      */
     private $provider;
 
     /**
-     * @param CounterDP $provider
+     * @param PokemonsDP $provider
      */
-    public function __construct(CounterDP $provider)
+    public function __construct(PokemonsDP $provider)
     {
         $this->provider = $provider;
     }
@@ -29,7 +29,7 @@ class MyWorker extends Worker
     /**
      * Возвращает провайдера
      *
-     * @return MyDataProvider
+     * @return PokemonsDP
      */
     public function getProvider()
     {

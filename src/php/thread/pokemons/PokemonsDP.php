@@ -1,18 +1,19 @@
 <?php
+
 /**
  * Провайдер данных для потоков
  */
-class CounterDP extends Threaded
+class PokemonsDP extends Threaded
 {
     /**
      * @var int Сколько элементов в нашей воображаемой БД
      */
-    private $total = 12;
+    private $total = 4;
 
     /**
      * @var int Сколько элементов было обработано
      */
-    private $processed = 0;
+    private $processed;
 
     /**
      * Переходим к следующему элементу и возвращаем его
@@ -27,6 +28,12 @@ class CounterDP extends Threaded
 
         $this->processed++;
 
-        return $this->processed;
+        return json_decode(file_get_contents(
+                'https://pokeapi.co/api/v2/pokemon?limit=20&offset=' . $this->processed));
+
+
+        //https://pokeapi.co/api/v2/pokemon?limit=20&offset=3
+
+
     }
 }
