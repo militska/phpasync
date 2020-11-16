@@ -1,7 +1,7 @@
 <?php
 
 /**
- * MyWork это задача, которая может выполняться параллельно
+ * Task это задача, которая может выполняться параллельно
  */
 class Task extends Threaded
 {
@@ -10,10 +10,7 @@ class Task extends Threaded
     {
         do {
             $value = null;
-
             $provider = $this->worker->getProvider();
-
-            // Синхронизируем получение данных
             $provider->synchronized(function ($provider) use (&$value) {
                 $value = $provider->getNext();
             }, $provider);
@@ -22,20 +19,50 @@ class Task extends Threaded
                 continue;
             }
 
-            $list = $value->results;
+            $list = $this->getListPokemons($value);
             foreach ($list as $pokemon) {
-                $infoPokemon = json_decode(file_get_contents($pokemon->url));
-                $abilities = [];
-                foreach ($infoPokemon->abilities as $ability) {
-                    $abilities[] = $ability->ability->name;
-                }
+                $abilities = $this->getAbility($pokemon->url);
 
-                $str = 'name: ' . $pokemon->name . '; abilities: ' . implode(", ", $abilities);
+                $str = 'step' . $value . '; name: ' . $pokemon->name . '; abilities: ' . implode(", ", $abilities);
                 file_put_contents
-                (__DIR__ . '/all.log',
+                (__DIR__ . '/logs/async/all.log.' . $value,
                     date('d.m.Y H:i:s') . " - " . $str . "\n", FILE_APPEND);
             }
         } while ($value !== null);
+    }
+
+
+    /***
+     * @param $url
+     * @return array
+     */
+    private function getAbility($url)
+    {
+        $infoPokemon = json_decode(file_get_contents($url));
+        $abilities = [];
+        foreach ($infoPokemon->abilities as $ability) {
+            $abilities[] = $ability->ability->name;
+        }
+        return $abilities;
+    }
+
+
+    /***
+     * @param $offset
+     * @return mixed
+     */
+    private function getListPokemons($offset)
+    {
+        $resPok = json_decode(file_get_contents(
+            'https://pokeapi.co/api/v2/pokemon?limit=20&offset=' . $offset));
+
+        $str = 'step ' . $offset . '; cnt ' . count($resPok->results) . '  ' . 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=' . $offset;
+        file_put_contents
+        (__DIR__ . '/logs/async/all.log.' . $offset,
+            date('d.m.Y H:i:s') . " - " . $str . "\n", FILE_APPEND);
+
+        return $resPok->results;
+
     }
 
 }

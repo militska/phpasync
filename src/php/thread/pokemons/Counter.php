@@ -3,7 +3,7 @@
 /**
  * Провайдер данных для потоков
  */
-class PokemonsDP extends Threaded
+class Counter extends Threaded
 {
     /**
      * @var int Сколько элементов в нашей воображаемой БД
@@ -18,22 +18,17 @@ class PokemonsDP extends Threaded
     /**
      * Переходим к следующему элементу и возвращаем его
      *
-     * @return mixed
+     * @return int
      */
     public function getNext()
     {
+
         if ($this->processed === $this->total) {
             return null;
         }
 
         $this->processed++;
 
-        return json_decode(file_get_contents(
-                'https://pokeapi.co/api/v2/pokemon?limit=20&offset=' . $this->processed));
-
-
-        //https://pokeapi.co/api/v2/pokemon?limit=20&offset=3
-
-
+        return $this->processed;
     }
 }

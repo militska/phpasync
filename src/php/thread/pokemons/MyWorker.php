@@ -6,30 +6,22 @@
 class MyWorker extends Worker
 {
     /**
-     * @var PokemonsDP
+     * @var Counter
      */
     private $provider;
 
     /**
-     * @param PokemonsDP $provider
+     * @param Counter $provider
      */
-    public function __construct(PokemonsDP $provider)
+    public function __construct(Counter $provider)
     {
         $this->provider = $provider;
     }
 
     /**
-     * Вызывается при отправке в Pool.
-     */
-    public function run()
-    {
-        // В этом примере нам тут делать ничего не надо
-    }
-
-    /**
      * Возвращает провайдера
      *
-     * @return PokemonsDP
+     * @return Counter
      */
     public function getProvider()
     {

@@ -1,14 +1,11 @@
 <?php
-require_once 'PokemonsDP.php';
+require_once 'Counter.php';
 require_once 'MyWorker.php';
 require_once 'Task.php';
 
 error_reporting(E_ALL);
 $threads = 4;
-
-// Создадим провайдер. Этот сервис может например читать некие данные
-// из файла или из БД
-$provider = new PokemonsDP();
+$provider = new Counter();
 
 // Создадим пул воркеров
 $pool = new Pool($threads, 'MyWorker', [$provider]);
