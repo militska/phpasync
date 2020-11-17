@@ -1,0 +1,84 @@
+17.11.2020 18:50:27 - step 40; cnt 20  https://pokeapi.co/api/v2/pokemon?limit=20&offset=40
+17.11.2020 18:50:27 - step 20; cnt 20  https://pokeapi.co/api/v2/pokemon?limit=20&offset=20
+17.11.2020 18:50:27 - step 80; cnt 20  https://pokeapi.co/api/v2/pokemon?limit=20&offset=80
+17.11.2020 18:50:27 - step 60; cnt 20  https://pokeapi.co/api/v2/pokemon?limit=20&offset=60
+17.11.2020 18:50:28 - step40; name: zubat; abilities: inner-focus, infiltrator
+17.11.2020 18:50:28 - step20; name: spearow; abilities: keen-eye, sniper
+17.11.2020 18:50:28 - step80; name: magnemite; abilities: magnet-pull, sturdy, analytic
+17.11.2020 18:50:28 - step60; name: poliwhirl; abilities: water-absorb, damp, swift-swim
+17.11.2020 18:50:28 - step40; name: golbat; abilities: inner-focus, infiltrator
+17.11.2020 18:50:28 - step20; name: fearow; abilities: keen-eye, sniper
+17.11.2020 18:50:28 - step60; name: poliwrath; abilities: water-absorb, damp, swift-swim
+17.11.2020 18:50:28 - step80; name: magneton; abilities: magnet-pull, sturdy, analytic
+17.11.2020 18:50:29 - step40; name: oddish; abilities: chlorophyll, run-away
+17.11.2020 18:50:29 - step20; name: ekans; abilities: intimidate, shed-skin, unnerve
+17.11.2020 18:50:29 - step60; name: abra; abilities: synchronize, inner-focus, magic-guard
+17.11.2020 18:50:29 - step80; name: farfetchd; abilities: keen-eye, inner-focus, defiant
+17.11.2020 18:50:29 - step40; name: gloom; abilities: chlorophyll, stench
+17.11.2020 18:50:29 - step20; name: arbok; abilities: intimidate, shed-skin, unnerve
+17.11.2020 18:50:29 - step60; name: kadabra; abilities: synchronize, inner-focus, magic-guard
+17.11.2020 18:50:30 - step80; name: doduo; abilities: run-away, early-bird, tangled-feet
+17.11.2020 18:50:30 - step20; name: pikachu; abilities: static, lightning-rod
+17.11.2020 18:50:30 - step40; name: vileplume; abilities: chlorophyll, effect-spore
+17.11.2020 18:50:30 - step60; name: alakazam; abilities: synchronize, inner-focus, magic-guard
+17.11.2020 18:50:30 - step80; name: dodrio; abilities: run-away, early-bird, tangled-feet
+17.11.2020 18:50:30 - step60; name: machop; abilities: guts, no-guard, steadfast
+17.11.2020 18:50:30 - step20; name: raichu; abilities: static, lightning-rod
+17.11.2020 18:50:30 - step40; name: paras; abilities: effect-spore, dry-skin, damp
+17.11.2020 18:50:31 - step60; name: machoke; abilities: guts, no-guard, steadfast
+17.11.2020 18:50:31 - step20; name: sandshrew; abilities: sand-veil, sand-rush
+17.11.2020 18:50:31 - step80; name: seel; abilities: thick-fat, hydration, ice-body
+17.11.2020 18:50:31 - step40; name: parasect; abilities: effect-spore, dry-skin, damp
+17.11.2020 18:50:31 - step60; name: machamp; abilities: guts, no-guard, steadfast
+17.11.2020 18:50:31 - step80; name: dewgong; abilities: thick-fat, hydration, ice-body
+17.11.2020 18:50:31 - step20; name: sandslash; abilities: sand-veil, sand-rush
+17.11.2020 18:50:31 - step40; name: venonat; abilities: compound-eyes, tinted-lens, run-away
+17.11.2020 18:50:31 - step60; name: bellsprout; abilities: chlorophyll, gluttony
+17.11.2020 18:50:31 - step80; name: grimer; abilities: stench, sticky-hold, poison-touch
+17.11.2020 18:50:32 - step20; name: nidoran-f; abilities: poison-point, rivalry, hustle
+17.11.2020 18:50:32 - step40; name: venomoth; abilities: shield-dust, tinted-lens, wonder-skin
+17.11.2020 18:50:32 - step80; name: muk; abilities: stench, sticky-hold, poison-touch
+17.11.2020 18:50:32 - step60; name: weepinbell; abilities: chlorophyll, gluttony
+17.11.2020 18:50:32 - step20; name: nidorina; abilities: poison-point, rivalry, hustle
+17.11.2020 18:50:32 - step60; name: victreebel; abilities: chlorophyll, gluttony
+17.11.2020 18:50:32 - step40; name: diglett; abilities: sand-veil, arena-trap, sand-force
+17.11.2020 18:50:32 - step80; name: shellder; abilities: shell-armor, skill-link, overcoat
+17.11.2020 18:50:32 - step20; name: nidoqueen; abilities: poison-point, rivalry, sheer-force
+17.11.2020 18:50:33 - step60; name: tentacool; abilities: clear-body, liquid-ooze, rain-dish
+17.11.2020 18:50:33 - step40; name: dugtrio; abilities: sand-veil, arena-trap, sand-force
+17.11.2020 18:50:33 - step80; name: cloyster; abilities: shell-armor, skill-link, overcoat
+17.11.2020 18:50:33 - step20; name: nidoran-m; abilities: poison-point, rivalry, hustle
+17.11.2020 18:50:33 - step40; name: meowth; abilities: pickup, technician, unnerve
+17.11.2020 18:50:33 - step60; name: tentacruel; abilities: clear-body, liquid-ooze, rain-dish
+17.11.2020 18:50:33 - step80; name: gastly; abilities: levitate
+17.11.2020 18:50:33 - step20; name: nidorino; abilities: poison-point, rivalry, hustle
+17.11.2020 18:50:34 - step60; name: geodude; abilities: rock-head, sturdy, sand-veil
+17.11.2020 18:50:34 - step80; name: haunter; abilities: levitate
+17.11.2020 18:50:34 - step40; name: persian; abilities: limber, technician, unnerve
+17.11.2020 18:50:34 - step20; name: nidoking; abilities: poison-point, rivalry, sheer-force
+17.11.2020 18:50:34 - step60; name: graveler; abilities: rock-head, sturdy, sand-veil
+17.11.2020 18:50:34 - step80; name: gengar; abilities: cursed-body
+17.11.2020 18:50:34 - step40; name: psyduck; abilities: damp, cloud-nine, swift-swim
+17.11.2020 18:50:34 - step20; name: clefairy; abilities: cute-charm, magic-guard, friend-guard
+17.11.2020 18:50:34 - step60; name: golem; abilities: rock-head, sturdy, sand-veil
+17.11.2020 18:50:34 - step40; name: golduck; abilities: damp, cloud-nine, swift-swim
+17.11.2020 18:50:35 - step80; name: onix; abilities: rock-head, sturdy, weak-armor
+17.11.2020 18:50:35 - step60; name: ponyta; abilities: run-away, flash-fire, flame-body
+17.11.2020 18:50:35 - step20; name: clefable; abilities: cute-charm, magic-guard, unaware
+17.11.2020 18:50:35 - step40; name: mankey; abilities: vital-spirit, anger-point, defiant
+17.11.2020 18:50:35 - step80; name: drowzee; abilities: insomnia, forewarn, inner-focus
+17.11.2020 18:50:35 - step60; name: rapidash; abilities: run-away, flash-fire, flame-body
+17.11.2020 18:50:35 - step20; name: vulpix; abilities: flash-fire, drought
+17.11.2020 18:50:36 - step40; name: primeape; abilities: vital-spirit, anger-point, defiant
+17.11.2020 18:50:36 - step80; name: hypno; abilities: insomnia, forewarn, inner-focus
+17.11.2020 18:50:36 - step60; name: slowpoke; abilities: oblivious, own-tempo, regenerator
+17.11.2020 18:50:36 - step20; name: ninetales; abilities: flash-fire, drought
+17.11.2020 18:50:36 - step80; name: krabby; abilities: hyper-cutter, shell-armor, sheer-force
+17.11.2020 18:50:36 - step40; name: growlithe; abilities: intimidate, flash-fire, justified
+17.11.2020 18:50:37 - step60; name: slowbro; abilities: oblivious, own-tempo, regenerator
+17.11.2020 18:50:37 - step20; name: jigglypuff; abilities: cute-charm, competitive, friend-guard
+17.11.2020 18:50:37 - step80; name: kingler; abilities: hyper-cutter, shell-armor, sheer-force
+17.11.2020 18:50:37 - step40; name: arcanine; abilities: intimidate, flash-fire, justified
+17.11.2020 18:50:37 - step20; name: wigglytuff; abilities: cute-charm, competitive, frisk
+17.11.2020 18:50:37 - step40; name: poliwag; abilities: water-absorb, damp, swift-swim
+17.11.2020 18:50:38 - step80; name: voltorb; abilities: soundproof, static, aftermath
