@@ -9,14 +9,17 @@ $task = new class extends Thread
             file_put_contents
             (__DIR__ . '/all.log', date('d.m.Y H:i:s') . " - step" . $inc . "\n", FILE_APPEND);
         }
+        echo "ok";
     }
 };
 
 $task->start();
 foreach (range(1, 6) as $inc) {
     sleep(2);
-    echo "hi";
+    echo "hi \n";
 }
 
 $task->join();
+
+var_dump($task->response); // s
 
