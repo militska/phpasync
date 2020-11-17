@@ -1,33 +1,22 @@
 <?php
 
-$task = new class extends Thread {
-    private $response;
-
-    public $content;
-
+$task = new class extends Thread
+{
     public function run()
     {
-        sleep(3);
-        echo "task";
-        sleep(3);
-
+        foreach (range(1, 10) as $inc) {
+            sleep(1);
+            file_put_contents
+            (__DIR__ . '/all.log', date('d.m.Y H:i:s') . " - step" . $inc . "\n", FILE_APPEND);
+        }
     }
 };
 
-$task2 = new class extends Thread {
-    private $response;
+$task->start();
+foreach (range(1, 6) as $inc) {
+    sleep(2);
+    echo "hi";
+}
 
-    public $content;
+$task->join();
 
-    public function run()
-    {
-        sleep(3);
-        echo "task";
-        sleep(3);
-
-    }
-};
-
-$task->start() && $task->join();
-
-var_dump($task->response); // s
