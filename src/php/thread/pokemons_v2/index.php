@@ -11,6 +11,12 @@ $workers = $threads;
 for ($i = 1; $i <= $workers; $i++) {
     $pool->submit(new Task($i));
 }
+
+
+foreach (range(1,20) as $value) {
+    sleep(1);
+    echo "iteration " . $value . "\n";
+}
 $pool->shutdown();
 
 printf("Done for %.2f seconds" . PHP_EOL, microtime(true) - $start);
