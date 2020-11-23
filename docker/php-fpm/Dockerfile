@@ -6,6 +6,7 @@ RUN set -ex \
   && apk --no-cache add \
     postgresql-dev
 
+RUN docker-php-ext-install sockets
 
 RUN apk add strace
 
