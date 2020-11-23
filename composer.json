@@ -2,7 +2,9 @@
     "require": {
         "ext-curl": "*",
         "ext-json": "*",
+        "ext-sockets": "*",
         "amphp/amp": "^2.5",
-        "guzzlehttp/guzzle": "^7.2"
+        "guzzlehttp/guzzle": "^7.2",
+        "amphp/parallel": "^1.4"
     }
 }
